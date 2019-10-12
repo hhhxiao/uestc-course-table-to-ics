@@ -6,6 +6,12 @@
 - 直接运行`main.py`即可，该文件目录应包含`courseTable.html`
 - `courseTable.html`可在[课表所在页面](http://eams.uestc.edu.cn/eams/courseTableForStd!courseTable.action)通过`Ctrl+S`保存
 - 暂不支通过信息门户的账号和密码爬取（以后有空加上）
+## 目前已知支持ICS的日历
+- 谷歌日历
+- 微软日历
+- oppo日历
+- 华为日历
+- 待补充
 ## 截图
 桌面小部件：
 
@@ -22,3 +28,5 @@
 ## 依赖
 - beautifulSoup4
 - ics
+- pytz
+- lxml

@@ -7,7 +7,7 @@ from ics import Calendar,Event
 
 #3 test passed
 def get_table_info():
-    soup = BeautifulSoup(open('courseTable.html'),'lxml')
+    soup = BeautifulSoup(open('courseTable.html',encoding="utf-8"),'lxml')
     tables =  soup.find_all('table')
     table = None
     for item in tables:
@@ -101,7 +101,7 @@ def get_ics_file():
         print(item,'\n')
         for event in get_events(item):
             c.events.add(event)
-    with open('course.ics', 'w') as my_file:
+    with open('course.ics', 'w',encoding="utf-8") as my_file:
         my_file.writelines(c)
 
 
